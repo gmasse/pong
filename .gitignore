@@ -1,3 +1,9 @@
+node_modules/
+package-lock.json
+
 openrc.sh
+
+**/.terraform/*
 *.tf
-node-modules
+*.tfstate
+*.tfstate.*
