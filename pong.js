@@ -21,18 +21,18 @@ var server = jayson.server({
                         var ms = rcvd - sent;
                         if(error) {
                                 if(error instanceof ping.RequestTimedOutError) {
+//                                        console.log(target + ": Time-out");
                                         callback({code: -32000, message: 'Time-out'});
                                 } else {
-                                        console.log(target + ": " + error.toString());
+//                                        console.log(target + ": " + error.toString());
                                         callback({message: error.toString()});
                                 }
                         } else {
+//                                console.log(target + ": " + ms);
                                 callback(null, ms);
                         }
                 });
         }
 });
 
-server.http().listen(3000, function() {
-  console.log('Server listening on http://localhost:3000');
-});
+module.exports = server;
