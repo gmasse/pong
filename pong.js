@@ -19,16 +19,17 @@ var server = jayson.server({
 
                 session.pingHost(target, function(error, target, sent, rcvd) {
                         var ms = rcvd - sent;
+                        console.log('session: %o', session);
                         if(error) {
                                 if(error instanceof ping.RequestTimedOutError) {
-//                                        console.log(target + ": Time-out");
+                                        console.log(target + ": Time-out");
                                         callback({code: -32000, message: 'Time-out'});
                                 } else {
-//                                        console.log(target + ": " + error.toString());
+                                        console.log(target + ": " + error.toString());
                                         callback({message: error.toString()});
                                 }
                         } else {
-//                                console.log(target + ": " + ms);
+                                console.log(target + ": " + ms);
                                 callback(null, ms);
                         }
                 });
