@@ -9,10 +9,11 @@
   },
   "dependencies": {
     "jayson": "^2.0.6",
-    "net-ping": "^1.2.3"
+    "net-ping": "^1.2.3",
+    "raw-socket": "gmasse/node-raw-socket"
   },
   "devDependencies": {
-    "jest": "^23.5.0"
+    "jest": "^23.6.0"
   },
   "scripts": {
     "test": "jest"
