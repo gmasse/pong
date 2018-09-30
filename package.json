@@ -9,8 +9,7 @@
   },
   "dependencies": {
     "jayson": "^2.0.6",
-    "net-ping": "^1.2.3",
-    "raw-socket": "gmasse/node-raw-socket"
+    "ping": "^0.2.2",
   },
   "devDependencies": {
     "jest": "^23.6.0"
