@@ -1,5 +1,5 @@
 {
-  "name": "pong",
+  "name": "netpong",
   "version": "0.0.1",
   "description": "API for latency test",
   "main": "server.js",
