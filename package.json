@@ -2,7 +2,7 @@
   "name": "pong",
   "version": "0.0.1",
   "description": "API for latency test",
-  "main": "server.js",
+  "main": "app.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/gmasse/pong.git"
