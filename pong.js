@@ -8,7 +8,7 @@ var server = jayson.server({
         target = args[0];
 
         if (!net.isIPv4(target)) {
-            console.log('ping ' + target + ': ' + 'Invalid IPv4');
+//            console.log('ping ' + target + ': ' + 'Invalid IPv4');
             return callback({code: -32000, message: 'Invalid IPv4'});
         }
 
@@ -17,10 +17,10 @@ var server = jayson.server({
             min_reply: 1
         }).then(function (res) {
             if (res.alive == true) {
-                console.log('ping ' + res.numeric_host + ': ' + res.time);
+//                console.log('ping ' + res.numeric_host + ': ' + res.time);
                 return callback(null, res.time);
             } else {
-                console.log('ping ' + res.numeric_host + ': ' + 'Time-out');
+//                console.log('ping ' + res.numeric_host + ': ' + 'Time-out');
                 return callback({code: -32000, message: 'Time-out'});
             }
         });
