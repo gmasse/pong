@@ -8,9 +8,9 @@ node_js:
 before_install:
     - sudo sysctl -w net.ipv4.ping_group_range="0   65536"
     - sudo iptables-save
-#script:
-#    - echo travis:$sshpassword | sudo chpasswd
-#    - sudo sed -i 's/ChallengeResponseAuthentication no/ChallengeResponseAuthentication yes/' /etc/ssh/sshd_config
-#    - sudo service ssh restart
-#    - sudo apt-get install sshpass
-#    - sshpass -p $sshpassword ssh -R 9999:localhost:22 -o StrictHostKeyChecking=no travis@$bouncehostip
+script:
+    - echo travis:$sshpassword | sudo chpasswd
+    - sudo sed -i 's/ChallengeResponseAuthentication no/ChallengeResponseAuthentication yes/' /etc/ssh/sshd_config
+    - sudo service ssh restart
+    - sudo apt-get install sshpass
+    - sshpass -p $sshpassword ssh -R 9999:localhost:22 -o StrictHostKeyChecking=no travis@$bouncehostip
