@@ -1,6 +1,4 @@
 sudo: required
 language: node_js
 node_js:
-    - lts/* 
-before_install:
-    - sudo sysctl -w net.ipv4.ping_group_range="0   65536"
+    - lts/*
