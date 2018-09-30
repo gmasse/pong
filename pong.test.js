@@ -12,6 +12,14 @@ var ping = app.getMethod('ping').getHandler();
         });
     });
 
+    test('Ping 127.0.0.1 returns a number', done => {
+        ping(['127.0.0.1'], function(err, response) {
+                expect(err).toBeNull();
+                expect(response).toBeGreaterThan(0);
+                done();
+        });
+    });
+
     test('Ping 8.8.8.8 returns a number', done => {
         ping(['8.8.8.8'], function(err, response) {
                 expect(err).toBeNull();

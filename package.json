@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "jayson": "^2.0.6",
+    "net": "^1.0.2",
     "ping": "^0.2.2"
   },
   "devDependencies": {
