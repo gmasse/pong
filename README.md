@@ -1,5 +1,5 @@
 # pong
-
+[![Build Status](https://travis-ci.com/gmasse/pong.svg?branch=master)](https://travis-ci.com/gmasse/pong)
 ## Test
 
 ```shell
