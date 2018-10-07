@@ -18,6 +18,10 @@
   "scripts": {
     "test": "jest"
   },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  },
   "author": "Germain Masse",
   "license": "ISC"
 }

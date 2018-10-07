@@ -7,3 +7,6 @@ openrc.sh
 *.tf
 *.tfstate
 *.tfstate.*
+
+coverage
+*.lcov
