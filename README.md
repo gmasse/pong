@@ -1,5 +1,6 @@
 # pong
-[![Build Status](https://travis-ci.com/gmasse/pong.svg?branch=master)](https://travis-ci.com/gmasse/pong)
+[![Build Status](https://travis-ci.com/gmasse/pong.svg?branch=master)](https://travis-ci.com/gmasse/pong) [![codecov](https://codecov.io/gh/gmasse/pong/branch/master/graph/badge.svg)](https://codecov.io/gh/gmasse/pong)
+
 
 ## Installation
 
